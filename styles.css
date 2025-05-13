@@ -1,12 +1,12 @@
 :root {
-    --bg-color: #f5f5f5;
-    --text-color: #333;
-    --link-bg: #ffffff;
-    --link-hover: #f0f0f0;
+    --bg-color: #ffff4d;
+    --text-color: #ff33ff;
+    --link-bg: #80aaff;
+    --link-hover: #3377ff;
     --link-shadow: rgba(0, 0, 0, 0.1);
     --music-bg: rgba(255, 255, 255, 0.9);
-    --primary-color: #4a86e8;
-    --secondary-color: #9c27b0;
+    --primary-color: #4dff88;
+    --secondary-color: #ff4d4d;
     --transition-speed: 0.4s;
 }
 
