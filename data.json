@@ -1,19 +1,19 @@
 {
     "profile": {
         "name": "Glospot",
-        "bio": "Hallo Rekk 😅",
-        "image": "https://tmpfiles.org/dl/28035713/1747109802338.jpg"
+        "bio": "Admin Bot 🤓",
+        "image": "https://e.top4top.io/p_3420u3bun1.jpg"
     },
     "links": [
         {
             "title": "Whatsapp",
             "url": "https://wa.me/message/FEKYR7NENFG7N1",
-            "icon": "fa-whatsapp"
+            "icon": "fa fa-whatsapp"
         },
         {
             "title": "Group Bot",
             "url": "https://chat.whatsapp.com/JzpLPmrYl8g5YTihhLo0Gh",
-            "icon": "fa-commenting-o"
+            "icon": "fa fa-commenting"
         },
         {
             "title": "Sewa Bot",
@@ -24,7 +24,7 @@
     "music": {
         "title": "Dj 8 LETTERS",
         "artist": "Rawi Djafar",
-        "albumArt": "https://tmpfiles.org/dl/28045222/1747116680633.jpg",
+        "albumArt": "https://c.top4top.io/p_3420mrlre1.jpg",
         "audioFile": "https://d.top4top.io/m_3420ng9kg1.mp3", 
         "duration": 180,
         "timeSync": [
