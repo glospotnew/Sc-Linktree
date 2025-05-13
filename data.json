@@ -1,71 +1,46 @@
 {
     "profile": {
         "name": "Glospot",
-        "bio": "Welcome to my online space where I share my passions and connect with you!",
+        "bio": "Hallo Rekk 😅",
         "image": "https://tmpfiles.org/dl/28035713/1747109802338.jpg"
     },
     "links": [
         {
-            "title": "Instagram",
-            "url": "https://instagram.com/Glospot",
-            "icon": "fab fa-instagram"
+            "title": "Whatsapp",
+            "url": "https://wa.me/message/FEKYR7NENFG7N1",
+            "icon": "fa-whatsapp"
         },
         {
-            "title": "Twitter",
-            "url": "https://twitter.com/Glospot",
-            "icon": "fab fa-twitter"
+            "title": "Group Bot",
+            "url": "https://chat.whatsapp.com/JzpLPmrYl8g5YTihhLo0Gh",
+            "icon": "fa-commenting-o"
         },
         {
-            "title": "YouTube",
-            "url": "https://youtube.com/Glospot",
-            "icon": "fab fa-youtube"
-        },
-        {
-            "title": "Website",
-            "url": "https://yourwebsite.com",
-            "icon": "fas fa-globe"
-        },
-        {
-            "title": "TikTok",
-            "url": "https://tiktok.com/@Glospot",
-            "icon": "fab fa-tiktok"
-        },
-        {
-            "title": "Pinterest",
-            "url": "https://pinterest.com/yourusername",
-            "icon": "fab fa-pinterest"
-        },
-        {
-            "title": "GitHub",
-            "url": "https://github.com/yourusername",
-            "icon": "fab fa-github"
-        },
-        {
-            "title": "LinkedIn",
-            "url": "https://linkedin.com/in/yourusername",
-            "icon": "fab fa-linkedin"
+            "title": "Sewa Bot",
+            "url": "https://wa.me/p/8376318075818227/6283890747424",
+            "icon": "fa-solid fa-robot"
         }
     ],
     "music": {
-        "title": "Ya sudahlah",
-        "artist": "Bondan Prakoso",
-        "albumArt": "YOUR_ALBUM_ART_URL_HERE",
-        "audioFile": "https://c.top4top.io/m_3420478cj1.mp3", 
+        "title": "Dj 8 LETTERS",
+        "artist": "Rawi Djafar",
+        "albumArt": "https://tmpfiles.org/dl/28045222/1747116680633.jpg",
+        "audioFile": "https://d.top4top.io/m_3420ng9kg1.mp3", 
         "duration": 180,
         "timeSync": [
-            { "time": 0, "text": "Intro music..." },
-            { "time": 5, "text": "First verse line 1\nBaris terjemahan" },
-            { "time": 10, "text": "First verse line 2\nBaris terjemahan" },
-            { "time": 15, "text": "First verse line 3\nBaris terjemahan" },
-            { "time": 20, "text": "First verse line 4\nBaris terjemahan" },
-            { "time": 25, "text": "Pre-chorus line 1\nBaris terjemahan" },
-            { "time": 30, "text": "Pre-chorus line 2\nBaris terjemahan" },
-            { "time": 35, "text": "Chorus line 1\nBaris terjemahan" },
-            { "time": 40, "text": "Chorus line 2\nBaris terjemahan" },
-            { "time": 45, "text": "Chorus line 3\nBaris terjemahan" },
-            { "time": 50, "text": "Chorus line 4\nBaris terjemahan" },
-            { "time": 55, "text": "Post-chorus\nBaris terjemahan" },
-            { "time": 60, "text": "Second verse line 1\nBaris terjemahan" }
+            { "time": 0, "text": "" },
+            { "time": 5, "text": "" },
+            { "time": 10, "text": "" },
+            { "time": 15, "text": "" },
+            { "time": 20, "text": "" },
+            { "time": 25, "text": "" },
+            { "time": 30, "text": "" },
+            { "time": 35, "text": "" },
+            { "time": 40, "text": "" },
+            { "time": 45, "text": "" },
+            { "time": 50, "text": "" },
+            { "time": 55, "text": "" },
+            { "time": 60, "text": "" }
         ]
     }
 }
