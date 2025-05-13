@@ -1,7 +1,7 @@
 {
     "profile": {
         "name": "Glospot",
-        "bio": "Admin Bot 🤓",
+        "bio": "Atmin bot glospot",
         "image": "https://e.top4top.io/p_3420u3bun1.jpg"
     },
     "links": [
@@ -14,6 +14,11 @@
             "title": "Group Bot",
             "url": "https://chat.whatsapp.com/JzpLPmrYl8g5YTihhLo0Gh",
             "icon": "fa fa-commenting"
+        },
+        {
+            "title": "Channel Bot/Informasi",
+            "url": "https://whatsapp.com/channel/0029VaIRJkGInlqPr3kjRV0s",
+            "icon": "fa-duotone fa-regular fa-headset"
         },
         {
             "title": "Sewa Bot",
