@@ -1,51 +1,49 @@
 {
-    "profile": {
-        "name": "Glospot",
-        "bio": "Atmin bot glospot",
-        "image": "https://g.top4top.io/p_3420aouot1.jpg"
-    },
-    "links": [
-        {
-            "title": "Whatsapp Atmin",
-            "url": "https://wa.me/message/FEKYR7NENFG7N1",
-            "icon": "fab fa-whatsapp"
-        },
-        {
-            "title": "Group Bot",
-            "url": "https://chat.whatsapp.com/JzpLPmrYl8g5YTihhLo0Gh",
-            "icon": "fa fa-commenting"
-        },
-        {
-            "title": "Channel Bot/Informasi",
-            "url": "https://whatsapp.com/channel/0029VaIRJkGInlqPr3kjRV0s",
-            "icon": "fa-solid fa-headset"
-        },
-        {
-            "title": "Sewa Bot",
-            "url": "https://wa.me/p/8376318075818227/6283890747424",
-            "icon": "fa-solid fa-robot"
-        }
+  "siteInfo": {
+    "title": "Glospot Botz",
+    "description": "Admin bot serbaguna untuk Whatsapp Anda.",
+    "thumbnailUrl": "images/default_profile.png"
+  },
+  "theme": {
+    "backgroundColor": "#e0f7fa",
+    "primaryTextColor": "#333",
+    "secondaryTextColor": "#777",
+    "accentColor": "#81d4fa",
+    "buttonTextColor": "#004d40"
+  },
+  "music": {
+    "urls": [
+      "music/song1.mp3",
+      "music/song2.mp3",
+      "music/song3.mp3",
+      "music/song4.mp3",
+      "music/song5.mp3"
     ],
-    "music": {
-        "title": "Dj Calma X Rela",
-        "artist": "-",
-        "albumArt": "https://c.top4top.io/p_3420mrlre1.jpg",
-        "audioFile": "https://i.top4top.io/m_3016djywk0.mp3", 
-        "duration": 180,
-        "timeSync": [
-            { "time": 0, "text": "" },
-            { "time": 5, "text": "" },
-            { "time": 10, "text": "" },
-            { "time": 15, "text": "" },
-            { "time": 20, "text": "" },
-            { "time": 25, "text": "" },
-            { "time": 30, "text": "" },
-            { "time": 35, "text": "" },
-            { "time": 40, "text": "" },
-            { "time": 45, "text": "" },
-            { "time": 50, "text": "" },
-            { "time": 55, "text": "" },
-            { "time": 60, "text": "" }
-        ]
+    "currentIndex": 0
+  },
+  "buttons": [
+    {
+      "title": "Whatsapp Atmin",
+      "url": "https://wa.me/message/FEKYR7NENFG7N1",
+      "icon": "fab fa-whatsapp"
+    },
+    {
+      "title": "Group Bot",
+      "url": "https://chat.whatsapp.com/JzpLPmrYl8g5YTihhLo0Gh",
+      "icon": "fa fa-commenting"
+    },
+    {
+      "title": "Channel Bot/Informasi",
+      "url": "https://whatsapp.com/channel/0029VaIRJkGInlqPr3kjRV0s",
+      "icon": "fa-solid fa-headset"
+    },
+    {
+      "title": "Sewa Bot",
+      "url": "https://wa.me/p/8376318075818227/6283890747424",
+      "icon": "fa-solid fa-robot"
     }
+  ],
+  "footer": {
+    "text": "&copy; 2025 Glospot - Botz | Dibuat dengan ❤️"
+  }
 }
