@@ -1,74 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern LinkTree</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title id="pageTitle"></title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBGkIDxbbtqz0whesgtP8UPtN/dlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <div class="welcome-panel" id="welcomePanel">
-        <div class="welcome-content animate__animated animate__fadeIn">
-            <div class="welcome-icon">
-                <i class="far fa-smile"></i>
-            </div>
-            <h2>Selamat datang di website saya</h2>
-            <p>Terima kasih telah berkunjung! Klik di bawah untuk menjelajah.</p>
-            <button id="welcomeCloseBtn">Klik disini</button>
-        </div>
-    </div>
+    <div class="container">
+        <img src="" alt="Logo Glospot" class="profile-image" id="profileImage">
+        <h1 id="websiteTitle"></h1>
+        <p id="websiteDescription"></p>
 
-    <div class="container animate__animated animate__fadeIn animate__delay-1s">
-        <div class="profile">
-            <div class="profile-pic-container">
-                <img src="" alt="Profile Picture" class="profile-pic" id="profilePic">
-            </div>
-            <h1 class="profile-name animate__animated animate__fadeInUp animate__delay-1s" id="profileName">Your Name</h1>
-            <p class="profile-bio animate__animated animate__fadeInUp animate__delay-1s" id="profileBio">Your short biography or description goes here. Keep it concise and interesting!</p>
+        <ul class="button-list" id="buttonList">
+            </ul>
+
+        <div class="music-player">
+            <audio controls id="audioPlayer"></audio>
+            <button id="changeSongButton" class="button"><i class="fas fa-random"></i> Ganti Lagu</button>
         </div>
-        
-        <div class="links-container" id="linksContainer">
-            <!-- Links will be added here from JSON data -->
-        </div>
-        
-        <div class="footer animate__animated animate__fadeInUp animate__delay-2s">
-            &copy; <span id="currentYear"></span> Glospot - Botz
-        </div>
-    </div>
-    
-    <div class="music-player" id="musicPlayer">
-        <button class="music-toggle" id="musicToggle">
-            <i class="fas fa-music"></i>
-        </button>
-        <div class="music-header">
-            <img src="" alt="Album Art" class="album-art" id="albumArt">
-            <div class="music-info">
-                <div class="song-title" id="songTitle">Song Title</div>
-                <div class="artist" id="artist">Artist Name</div>
-                <div class="lyrics-wrapper">
-                    <div class="lyrics-container">
-                        <div class="lyrics" id="lyrics">
-                            <!-- Lyrics will be displayed here -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="music-controls">
-            <button class="play-pause" id="playPauseBtn">
-                <i class="fas fa-play" id="playPauseIcon"></i>
-            </button>
-            <div class="progress-container">
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
-            <div class="time-display">
-                <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
-            </div>
-        </div>
-        
-        <audio id="audioPlayer" preload="metadata"></audio>
+
+        <p class="footer" id="footerText"></p>
     </div>
 
     <script src="script.js"></script>
