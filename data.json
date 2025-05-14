@@ -1,8 +1,8 @@
 {
   "siteInfo": {
     "title": "Glospot Botz",
-    "description": "Admin bot serbaguna untuk Whatsapp Anda.",
-    "thumbnailUrl": "images/default_profile.png"
+    "description": "Digital Asisten Anda",
+    "thumbnailUrl": "https://g.top4top.io/p_3420aouot1.jpg"
   },
   "theme": {
     "backgroundColor": "#e0f7fa",
@@ -13,17 +13,17 @@
   },
   "music": {
     "urls": [
-      "music/song1.mp3",
-      "music/song2.mp3",
-      "music/song3.mp3",
-      "music/song4.mp3",
-      "music/song5.mp3"
+      "https://a.top4top.io/m_3019nsgq00.mp3",
+      "https://a.top4top.io/m_301981ieu0.mp3",
+      "https://i.top4top.io/m_30194pxva0.mp3",
+      "https://f.top4top.io/m_3018obkyc0.mp3",
+      "https://i.top4top.io/m_30161kg540.mp3"
     ],
     "currentIndex": 0
   },
   "buttons": [
     {
-      "title": "Whatsapp Atmin",
+      "title": "Whatsapp Pemilik Bot",
       "url": "https://wa.me/message/FEKYR7NENFG7N1",
       "icon": "fab fa-whatsapp"
     },
@@ -44,6 +44,6 @@
     }
   ],
   "footer": {
-    "text": "&copy; 2025 Glospot - Botz | Dibuat dengan ❤️"
+    "text": "&copy; 2021-2025 Glospot - Botz"
   }
 }
