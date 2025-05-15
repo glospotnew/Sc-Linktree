@@ -7,11 +7,11 @@ const progressBar = document.getElementById('progress-bar');
 const currentTimeEl = document.getElementById('current-time');
 const durationEl = document.getElementById('duration');
 const songTitleEl = document.getElementById('song-title');
-const changeSongBtn = document.getElementById('change-song-btn');
 
 let isPlaying = false;
 let currentSongIndex = 0;
 
+// Load songs from data.json
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
@@ -20,6 +20,8 @@ fetch('data.json')
     });
 
 function loadSong() {
+    if (musicUrls.length === 0) return;
+
     audioPlayer.src = musicUrls[currentSongIndex];
     songTitleEl.textContent = `Lagu ${currentSongIndex + 1}`;
     
@@ -47,15 +49,18 @@ function formatTime(seconds) {
 }
 
 function updateProgress() {
-    const { currentTime, duration } = audioPlayer;
-    const progressPercent = (currentTime / duration) * 100;
-    progressBar.value = progressPercent;
-    currentTimeEl.textContent = formatTime(currentTime);
+    if (audioPlayer.duration) {
+        const progressPercent = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+        progressBar.value = progressPercent;
+        currentTimeEl.textContent = formatTime(audioPlayer.currentTime);
+    }
 }
 
 function setProgress() {
-    const duration = audioPlayer.duration;
-    audioPlayer.currentTime = (progressBar.value * duration) / 100;
+    if (audioPlayer.duration) {
+        const newTime = (progressBar.value / 100) * audioPlayer.duration;
+        audioPlayer.currentTime = newTime;
+    }
 }
 
 function nextSong() {
@@ -70,25 +75,15 @@ function prevSong() {
     if (isPlaying) playSong();
 }
 
-function changeSong() {
-    let newIndex;
-    do {
-        newIndex = Math.floor(Math.random() * musicUrls.length);
-    } while (newIndex === currentSongIndex);
-    
-    currentSongIndex = newIndex;
-    loadSong();
-    if (isPlaying) playSong();
-}
-
+// Event Listeners
 playBtn.addEventListener('click', () => {
     isPlaying ? pauseSong() : playSong();
 });
 
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
-changeSongBtn.addEventListener('click', changeSong);
 
 audioPlayer.addEventListener('timeupdate', updateProgress);
 audioPlayer.addEventListener('ended', nextSong);
+
 progressBar.addEventListener('input', setProgress);
