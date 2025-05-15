@@ -7,4 +7,36 @@
   "buttons": [
     {
       "title": "Whatsapp Pemilik Bot",
-      "url": "https://wa.me/message/FEKYR
+      "url": "https://wa.me/message/FEKYR7NENFG7N1",
+      "icon": "fab fa-whatsapp"
+    },
+    {
+      "title": "Group Bot",
+      "url": "https://chat.whatsapp.com/JzpLPmrYl8g5YTihhLo0Gh",
+      "icon": "fa fa-commenting"
+    },
+    {
+      "title": "Channel Bot/Informasi",
+      "url": "https://whatsapp.com/channel/0029VaIRJkGInlqPr3kjRV0s",
+      "icon": "fa-solid fa-headset"
+    },
+    {
+      "title": "Sewa Bot",
+      "url": "https://wa.me/p/8376318075818227/6283890747424",
+      "icon": "fa-solid fa-robot"
+    }
+  ],
+  "music": {
+    "urls": [
+      "https://a.top4top.io/m_3019nsgq00.mp3",
+      "https://a.top4top.io/m_301981ieu0.mp3",
+      "https://i.top4top.io/m_30194pxva0.mp3",
+      "https://f.top4top.io/m_3018obkyc0.mp3",
+      "https://i.top4top.io/m_30161kg540.mp3"
+    ],
+    "currentIndex": 0
+  },
+  "footer": {
+    "text": "&copy; 2021-2025 Glospot - Botz"
+  }
+}
