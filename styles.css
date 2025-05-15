@@ -1,164 +1,166 @@
-:root {
-    --body-bg: #f0f0f0; /* Latar belakang abu-abu muda */
-    --container-bg: #ffffff; /* Latar belakang kontainer putih */
-    --primary-text-color: #333; /* Warna teks utama gelap */
-    --secondary-text-color: #777; /* Warna teks sekunder abu-abu */
-    --accent-color: #64b5f6; /* Warna aksen biru yang lebih elegan */
-    --button-text-color: #fff; /* Warna teks tombol putih */
-    --footer-text-color: #999; /* Warna teks footer abu-abu */
-    --border-color: #e0e0e0; /* Warna border abu-abu muda */
-    --button-bg: var(--accent-color); /* Warna latar belakang tombol menggunakan aksen */
-    --button-hover-bg: #42a5f5; /* Warna latar belakang tombol saat dihover sedikit lebih gelap */
-    --button-radius: 8px; /* Radius sudut tombol */
-    --button-padding: 12px 20px; /* Padding tombol */
-    --max-width: 400px; /* Lebar maksimum kontainer lebih sesuai untuk tampilan ini */
-}
-
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 20px; /* Tambahkan sedikit padding di sekitar body */
-    background-color: var(--body-bg);
-    color: var(--primary-text-color);
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    line-height: 1.6;
+    background-color: #e0f7fa;
+    color: #333;
 }
 
 .container {
-    background-color: var(--container-bg);
-    border-radius: 15px; /* Sudut kontainer lebih bulat */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Bayangan kontainer lebih halus */
-    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
-    width: 95%;
-    max-width: var(--max-width);
 }
 
-.profile-image {
-    width: 100px;
-    height: 100px;
+.header {
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
-    border: 3px solid var(--accent-color); /* Border gambar menggunakan warna aksen */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan gambar */
-}
-
-h1 {
-    color: var(--primary-text-color);
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-p {
-    color: var(--secondary-text-color);
-    font-size: 1rem;
-    margin-bottom: 25px;
-}
-
-.button-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%; /* Tombol mengisi lebar kontainer */
-}
-
-.button-list li {
-    width: 100%;
-}
-
-.button-list a {
-    display: flex; /* Menggunakan flex untuk menata ikon dan teks */
-    align-items: center; /* Vertikal align ikon dan teks */
-    justify-content: center; /* Pusatkan ikon dan teks */
-    padding: var(--button-padding);
-    background-color: var(--button-bg);
-    color: var(--button-text-color);
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: var(--button-radius);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-
-.button-list a i {
-    margin-right: 10px; /* Ruang antara ikon dan teks */
-    font-size: 1.2rem; /* Ukuran ikon */
-}
-
-.button-list a:hover {
-    background-color: var(--button-hover-bg);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px); /* Efek sedikit terangkat saat hover */
-}
-
-.music-player {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.music-player audio {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 3px solid #81d4fa;
     margin-bottom: 15px;
 }
 
-.music-player button {
-    padding: 10px 15px;
-    background-color: var(--accent-color);
-    color: var(--button-text-color);
-    border: none;
-    border-radius: var(--button-radius);
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    font-size: 0.9rem;
+h1 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
 }
 
-.music-player button:hover {
-    background-color: var(--button-hover-bg);
-    transform: translateY(-1px);
+.header p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 16px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: #81d4fa;
+    color: #004d40;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #4fc3f7;
+    transform: translateY(-2px);
+}
+
+.button i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.music-player {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.control-btn {
+    background-color: #81d4fa;
+    color: #004d40;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    background-color: #4fc3f7;
+}
+
+#play-btn {
+    width: 50px;
+    height: 50px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 5px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #81d4fa;
+    cursor: pointer;
+}
+
+.song-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#song-title {
+    font-size: 14px;
+    color: #777;
+}
+
+#change-song-btn {
+    background-color: transparent;
+    border: none;
+    color: #81d4fa;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .footer {
-    color: var(--footer-text-color);
-    font-size: 0.9rem;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border-color);
-    text-align: center;
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 20px;
+    margin-top: 20px;
+    color: #777;
+    font-size: 12px;
     }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    p {
-        font-size: 0.95rem;
-    }
-
-    .button-list a {
-        font-size: 0.95rem;
-        padding: 10px 15px;
-    }
-
-    .button-list a i {
-        font-size: 1rem;
-        margin-right: 8px;
-    }
-}
