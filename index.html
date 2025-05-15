@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="pageTitle"></title>
+    <title>Glospot Botz</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBGkIDxbbtqz0whesgtP8UPtN/dlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <img src="" alt="Logo Glospot" class="profile-image" id="profileImage">
-        <h1 id="websiteTitle"></h1>
-        <p id="websiteDescription"></p>
-
-        <ul class="button-list" id="buttonList">
-            </ul>
-
-        <div class="music-player">
-            <audio controls id="audioPlayer"></audio>
-            <button id="changeSongButton" class="button"><i class="fas fa-random"></i> Ganti Lagu</button>
+        <div class="header">
+            <img id="thumbnail" src="" alt="Thumbnail" class="thumbnail">
+            <h1 id="site-title">Glospot Botz</h1>
+            <p id="site-description">Asisten Digital Anda</p>
         </div>
-
-        <p class="footer" id="footerText"></p>
+        
+        <div class="buttons-container" id="buttons-container">
+            <!-- Buttons will be loaded from data.json -->
+        </div>
+        
+        <div class="music-player">
+            <div class="player-controls">
+                <button id="prev-btn" class="control-btn"><i class="fas fa-backward"></i></button>
+                <button id="play-btn" class="control-btn"><i class="fas fa-play"></i></button>
+                <button id="next-btn" class="control-btn"><i class="fas fa-forward"></i></button>
+            </div>
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-bar" class="progress-bar" value="0">
+                <span id="duration">0:00</span>
+            </div>
+            <div class="song-info">
+                <span id="song-title">Memuat lagu...</span>
+                <button id="change-song-btn">Ganti Lagu</button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p id="footer-text">© 2021-2025 Glospot - Botz</p>
+        </div>
     </div>
-
+    
+    <audio id="audio-player"></audio>
+    
     <script src="script.js"></script>
 </body>
 </html>
